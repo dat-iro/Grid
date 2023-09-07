@@ -1,0 +1,151 @@
+.calculator {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    display: grid;
+    background-color: rgb(195, 195, 195);
+    border-radius: 10px;
+    width: 500px;
+    height: auto;
+    margin-left: 40%;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 70px 70px 70px 70px 70px;
+    grid-template-areas:
+        "result result result result"
+        "plus minus for divide"
+        "seven eight nine equal"
+        "four five six equal"
+        "one two three equal"
+        "zero dot ac equal";
+}
+
+#result {
+    grid-area: result;
+    background-color: rgb(70, 79, 83);
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#plus {
+    grid-area: plus;
+    background-color: rgb(171, 192, 199);
+    display: flex;
+    justify-content: center;
+}
+
+#minus {
+    grid-area: minus;
+    background-color: rgb(171, 192, 199);
+    display: flex;
+    justify-content: center;
+}
+
+#for {
+    grid-area: for;
+    background-color: rgb(171, 192, 199);
+    display: flex;
+    justify-content: center;
+}
+
+#divide {
+    grid-area: divide;
+    background-color: rgb(171, 192, 199);
+    display: flex;
+    justify-content: center;
+}
+
+#equal {
+    grid-area: equal;
+    background-color: rgb(255, 96, 96);
+    display: flex;
+    justify-content: center;
+}
+
+#ac {
+    grid-area: ac;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#dot {
+    grid-area: dot;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#zero {
+    grid-area: zero;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#one {
+    grid-area: one;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#two {
+    grid-area: two;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#three {
+    grid-area: three;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#four {
+    grid-area: four;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#five {
+    grid-area: five;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#six {
+    grid-area: six;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#seven {
+    grid-area: seven;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#eight {
+    grid-area: eight;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
+#nine {
+    grid-area: nine;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+}
+
