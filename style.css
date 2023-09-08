@@ -1,151 +1,152 @@
-.calculator {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
+.container {
     display: grid;
-    background-color: rgb(195, 195, 195);
-    border-radius: 10px;
-    width: 500px;
+    border: 1px transparent;
+    width: 200px;
     height: auto;
-    margin-left: 40%;
-    margin-top: 100px;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50px 70px 70px 70px 70px 70px;
-    grid-template-areas:
-        "result result result result"
-        "plus minus for divide"
-        "seven eight nine equal"
-        "four five six equal"
-        "one two three equal"
-        "zero dot ac equal";
+    border-radius: 5px;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    grid-template-areas: 
+     "result result result result"
+     "plus min per div"
+     "seven eight nine equal"
+     "four five six equal"
+     "one two three equal"
+     "zero_ dot_ AC equal";
+     margin-left: 45%;
+     margin-top: 30px;
 }
 
-#result {
+div {
+    border: 1px solid rgba(137, 157, 174, 255);
+}
+
+.result {
     grid-area: result;
-    background-color: rgb(70, 79, 83);
+    text-align:end;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: larger;
+    background-color: rgba(66, 76, 82, 255);
     color: white;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    padding-top: 5px;
+    padding-right: 5px;
+    border: 0;
 }
 
-#plus {
+.plus {
     grid-area: plus;
-    background-color: rgb(171, 192, 199);
-    display: flex;
-    justify-content: center;
+    background-color: rgba(210, 220, 228, 255);
+    padding-top: 4.5px;
+    border-left: none;
 }
 
-#minus {
-    grid-area: minus;
-    background-color: rgb(171, 192, 199);
-    display: flex;
-    justify-content: center;
+.min {
+    grid-area: min;
+    background-color: rgba(210, 220, 228, 255);
+    padding-top: 4px;
 }
 
-#for {
-    grid-area: for;
-    background-color: rgb(171, 192, 199);
-    display: flex;
-    justify-content: center;
+.per {
+    grid-area: per;
+    background-color: rgba(210, 220, 228, 255);
+    padding-top: 6px;
 }
 
-#divide {
-    grid-area: divide;
-    background-color: rgb(171, 192, 199);
-    display: flex;
-    justify-content: center;
+.division {
+    grid-area: div;
+    background-color: rgba(210, 220, 228, 255);
+    border-right: none;
+    padding-top: 5px;
 }
 
-#equal {
-    grid-area: equal;
-    background-color: rgb(255, 96, 96);
-    display: flex;
-    justify-content: center;
-}
-
-#ac {
-    grid-area: ac;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
-}
-
-#dot {
-    grid-area: dot;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
-}
-
-#zero {
-    grid-area: zero;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
-}
-
-#one {
-    grid-area: one;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
-}
-
-#two {
-    grid-area: two;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
-}
-
-#three {
-    grid-area: three;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
-}
-
-#four {
-    grid-area: four;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
-}
-
-#five {
-    grid-area: five;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
-}
-
-#six {
-    grid-area: six;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
-}
-
-#seven {
+.seven {
     grid-area: seven;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
+    border-left: none;
 }
 
-#eight {
+.eight {
     grid-area: eight;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
 }
 
-#nine {
+.nine {
     grid-area: nine;
-    background-color: rgb(187, 187, 187);
-    display: flex;
-    justify-content: center;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
 }
 
+.equal{
+    grid-area: equal;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(247, 112, 119, 255);
+    padding-top: 50px;
+    border-right: none;
+    border-bottom: none;
+   
+}
+
+.four {
+    grid-area: four;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
+    border-left: none;
+}
+
+.five{
+    grid-area: five;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
+}
+
+.six{
+    grid-area: six;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
+}
+
+.one {
+    grid-area: one;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
+    border-left: none;
+}
+
+.two {
+    grid-area: two;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
+}
+
+.three{
+    grid-area: three;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
+}
+
+.zero{
+    grid-area: zero_;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
+    border-left: none;
+    border-bottom: none;
+}
+.dot{
+    grid-area: dot_;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
+    border-bottom: none;
+}
+.AC{
+    grid-area: AC;
+    background-color: rgba(239, 242, 245, 255);
+    padding-top: 5px;
+    border-bottom: none;
+}
